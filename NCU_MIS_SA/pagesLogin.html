@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+    <title>EZ定火車</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -60,30 +60,24 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
-            <li><a href="indexA.html" class="active">Home</a></li>
+            <li><a href="indexA.html" class="active">主頁面</a></li>
 
-            <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <li class="dropdown"><a href="#"><span>會員服務</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
+                <li><a href="pagesRegister.html">會員登入</a></li>
+                <li><a href="pagesMemberProfile".html">會員資料</a></li>
+                <li><a href="pagesForgetPassword".html">忘記密碼</a></li>
               </ul>
             </li>
 
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pagesTrainTime".html">列車時刻</a></li>
+            <li class="dropdown"><a href="#"><span>線上訂票</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="pagesBooking.html">個人訂票</a></li>
+                <li><a href="pagesBookingRecord".html">歷史訂票紀錄</a></li>
+                <li><a href="pagesCountPrice".html">票價試算</a></li>
+              </ul>
+            </li>
             <li><a href="pagesLogin.html">登入</a></li>
             <li><a href="pagesRegister.html">註冊</a></li>
 
@@ -141,17 +135,17 @@
                   <div class="card-body">
                     <div class="pt-4 pb-2">
                       <h5 class="card-title text-center pb-0 fs-4">
-                        Login to Your Account
+                        登入帳號
                       </h5>
                       <p class="text-center small">
-                        Enter your username & password to login
+                        輸入使用者名稱以及密碼登入.
                       </p>
                     </div>
 
                     <form class="row g-3 needs-validation" novalidate>
                       <div class="col-12">
                         <label for="yourUsername" class="form-label"
-                          >Username</label
+                          >使用者名稱</label
                         >
                         <div class="input-group has-validation">
                           <!-- <span class="input-group-text" id="inputGroupPrepend"
@@ -165,14 +159,14 @@
                             required
                           />
                           <div class="invalid-feedback">
-                            Please enter your username.
+                            請輸入帳號!
                           </div>
                         </div>
                       </div>
 
                       <div class="col-12">
                         <label for="yourPassword" class="form-label"
-                          >Password</label
+                          >密碼</label
                         >
                         <input
                           type="password"
@@ -182,7 +176,7 @@
                           required
                         />
                         <div class="invalid-feedback">
-                          Please enter your password!
+                          請輸入密碼!
                         </div>
                       </div>
 
@@ -196,7 +190,7 @@
                             id="rememberMe"
                           />
                           <label class="form-check-label" for="rememberMe"
-                            >Remember me</label
+                            >記住我</label
                           >
                         </div>
                       </div>
@@ -208,8 +202,12 @@
                       </div>
                       <div class="col-12">
                         <p class="small mb-0">
-                          Don't have account?
+                          沒有帳號?
                           <a href="pagesRegister.html">註冊帳號</a>
+                        </p>
+                        <p class="small mb-0">
+                          忘記密碼?
+                          <a href="pagesForgetPassword.html">忘記密碼</a>
                         </p>
                       </div>
                     </form>

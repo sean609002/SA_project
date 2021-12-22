@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Pages / Register - NiceAdmin Bootstrap Template</title>
+    <title>EZ定火車</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -60,33 +60,26 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-            <li><a href="indexA.html" class="active">Home</a></li>
+              <li><a href="indexA.html" class="active">主頁面</a></li>
 
-            <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a href="#"><span>會員服務</span> <i class="bi bi-chevron-down"></i></a>
+               <ul>
+                  <li><a href="pagesRegister.html">會員登入</a></li>
+                  <li><a href="pagesMemberProfile".html">會員資料</a></li>
+                  <li><a href="pagesForgetPassword".html">忘記密碼</a></li>
+               </ul>
+              </li>
+
+              <li><a href="pagesTrainTime".html">列車時刻</a></li>
+              <li class="dropdown"><a href="#"><span>線上訂票</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                    <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                    </ul>
-                </li>
+                  <li><a href="pagesBooking.html">個人訂票</a></li>
+                  <li><a href="pagesBookingRecord".html">歷史訂票紀錄</a></li>
+                  <li><a href="pagesCountPrice".html">票價試算</a></li>
                 </ul>
-            </li>
-
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="pagesLogin.html">登入</a></li>
-            <li><a href="pagesRegister.html">註冊</a></li>
-
+              </li>
+              <li><a href="pagesLogin.html">登入</a></li>
+              <li><a href="pagesRegister.html">註冊</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -141,18 +134,18 @@
                   <div class="card-body">
                     <div class="pt-4 pb-2">
                       <h5 class="card-title text-center pb-0 fs-4">
-                        Create an Account
+                        創建帳號
                       </h5>
                       <p class="text-center small">
-                        Enter your personal details to create account
+                        輸入個人資料以創建帳號
                       </p>
                     </div>
 
                     <form class="row g-3 needs-validation" novalidate>
                       <div class="col-12">
-                        <label for="yourName" class="form-label"
-                          >Your Name</label
-                        >
+                        <label for="yourName" class="form-label">
+                           你的姓名
+                        </label>
                         <input
                           type="text"
                           name="name"
@@ -161,14 +154,15 @@
                           required
                         />
                         <div class="invalid-feedback">
-                          Please, enter your name!
+                          請輸入你的姓名!
                         </div>
                       </div>
 
                       <div class="col-12">
-                        <label for="yourEmail" class="form-label"
-                          >Your Email</label
-                        >
+                        <label for="yourEmail" class="form-label">
+                          你的e-mail
+                        </label>
+                        
                         <input
                           type="email"
                           name="email"
@@ -177,13 +171,13 @@
                           required
                         />
                         <div class="invalid-feedback">
-                          Please enter a valid Email adddress!
+                          請輸入有效的電子郵件!
                         </div>
                       </div>
 
                       <div class="col-12">
                         <label for="yourUsername" class="form-label"
-                          >Username</label
+                          >使用者名稱</label
                         >
                         <div class="input-group has-validation">
                           <!-- <span class="input-group-text" id="inputGroupPrepend"
@@ -197,14 +191,14 @@
                             required
                           />
                           <div class="invalid-feedback">
-                            Please choose a username.
+                            請填寫使用者名稱.
                           </div>
                         </div>
                       </div>
 
                       <div class="col-12">
                         <label for="yourPassword" class="form-label"
-                          >Password</label
+                          >密碼</label
                         >
                         <input
                           type="password"
@@ -214,7 +208,7 @@
                           required
                         />
                         <div class="invalid-feedback">
-                          Please enter your password!
+                          請填寫密碼!
                         </div>
                       </div>
 
@@ -229,22 +223,22 @@
                             required
                           />
                           <label class="form-check-label" for="acceptTerms"
-                            >I agree and accept the
-                            <a href="#">terms and conditions</a></label
+                            >我同意
+                            <a href="#">使用者條款</a></label
                           >
                           <div class="invalid-feedback">
-                            You must agree before submitting.
+                            必須勾選同意才能送出
                           </div>
                         </div>
                       </div>
                       <div class="col-12">
                         <button class="btn btn-primary w-100" type="submit">
-                          Create Account
+                          生成帳號
                         </button>
                       </div>
                       <div class="col-12">
                         <p class="small mb-0">
-                          Already have an account?
+                          已有帳號?
                           <a href="pagesLogin.html">登入</a>
                         </p>
                       </div>
