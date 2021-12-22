@@ -34,7 +34,7 @@
 <meta name="Keywords" content="交通部臺灣鐵路管理局, 臺灣鐵路管理局,台鐵,臺鐵,臺鐵夢工場,臺鐵e訂通,台鐵e訂通,Railway,台鐵 悠遊卡,多卡通,腳踏車 火車,去回票,無障礙,電子票證,App,訂票,時刻表,票價">
 <!--電子分類檢索END-->
 <link rel="shortcut icon" href="https://tip-tr4cdn.cdn.hinet.net/tra-tip-web/static/images/favicon.ico">
-<title class="webTitle">交通部臺灣鐵路管理局</title>
+<title>EZ訂火車</title>
 
 
 <!-- <th:block th:with="etag='?version=8.7.18'"> -->
@@ -87,10 +87,40 @@
 	#header{
 		align-items: center !important;
 		padding: 0 !important;
+		font-size: medium !important;
 	}
 	.navbar {
 		padding-top: 20px !important;
 	}
+	.container{
+		height: 68px !important;
+	}
+	.btn-linear.active{
+		background-color: #0e9c26 !important;
+	}
+	.icon:before{
+		color: #0e9c26 !important;
+	}
+	.line-inner li button.active{
+		background: #0e9c26 !important;
+	}
+	.select.form-control{
+		background-image: 
+			linear-gradient(60deg, transparent 50%, #0e9c26 50%),
+			linear-gradient(120deg, #0e9c26 50%, transparent 50%) , 
+			linear-gradient(to right, #fff, #fff) !important; 
+	}
+	.a.btn-3d:hover, .btn-3d:hover, a.btn-3d:focus, .btn-3d:focus{
+		background: #2bdf49 !important;
+	}
+	.icon, .icon-a, button.icon, button.icon-a{
+		height: 27px !important;
+		width: 28px !important;
+	}
+	.btn-info{
+		background: #2bdf49 !important;
+	}
+
 </style>
 
 	<!-- /*外文版的css*/ -->
@@ -254,13 +284,12 @@
               </li>
             </ul>
           </li>
-
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-		  <li><a href="train.html">列車查詢</a></li>
+		  
+          <li><a href="railway.html">關於台鐵</a></li>
+          <li><a href="travel.html">旅遊票券</a></li>
+          <li><a href="railwaypolice.html">鐵路警察局</a></li>
+          <li><a href="contact.html">聯絡客服</a></li>
+          <li><a href="train.html">列車查詢</a></li>
           <li><a href="pagesLogin.html">登入</a></li>
           <li><a href="pagesRegister.html">註冊</a></li>
 
@@ -3658,14 +3687,18 @@
 		<!-- 提示訊息 END -->
 
 		<!--標題-->
-		<div class="main-header">
+		<!-- <div class="main-header">
 			<h2>
 				<strong>列車時刻/車次查詢</strong>
 			</h2>
-		</div>
+		</div> -->
 		<!--標題 end-->
 
 		<!-- 頁面內容 -->
+		<div>
+			<br></br>
+			<br></br>
+		</div>
 		<div id="pageContent">
 		<form id="queryForm" action="/tra-tip-web/tip/tip001/tip112/querybytime" method="post"><input type="hidden" name="_csrf" value="874afc42-8101-47c0-915c-24bec4ef0a90"/>
 			<!--搜尋區塊-->
@@ -3674,9 +3707,9 @@
 					<div class="zone">
 						<div class="form_title">查詢條件</div>
 						<div class="btn-group">
-							<a href="/tra-tip-web/tip/tip001/tip112/gobytime" class="btn btn-lg btn-linear active">依時刻</a>
-							<a href="/tra-tip-web/tip/tip001/tip112/gobystation" class="btn btn-lg btn-linear">依車站</a>
-							<a href="/tra-tip-web/tip/tip001/tip112/gobytrainno" class="btn btn-lg btn-linear">依車次</a>
+							<a class="btn btn-lg btn-linear active">依時刻</a>
+							<!-- <a href="/tra-tip-web/tip/tip001/tip112/gobystation" class="btn btn-lg btn-linear">依車站</a>
+							<a href="/tra-tip-web/tip/tip001/tip112/gobytrainno" class="btn btn-lg btn-linear">依車次</a> -->
 						</div>
 					</div>
 					<!-- 出發站 -->
@@ -3689,7 +3722,6 @@
 							<button type="button" title="文字站點查詢" class="icon icon-list" data-type="startStation">文字站點查詢</button>
 							<button type="button" title="圖片站點查詢" class="icon icon-map" data-type="startStation">圖片站點查詢</button>
 						</div>
-						<a href="/tra-tip-web/tip/tip001/tip111/view" target="_blank" title="車站代碼查詢(另開新視窗)" class="color-rag">車站代碼查詢</a>
 					</div>
 					<!-- 出發站與抵達站交換功能 -->
 					<div class="zone exchange-margin">
@@ -3714,14 +3746,14 @@
 								<input type="radio" name="transfer" id="option1" value="ONE" checked="checked">
 								限直達
 							</label>
-							<label for="option2" class="btn btn-lg btn-linear">
+							<!-- <label for="option2" class="btn btn-lg btn-linear">
 								<input type="radio" name="transfer" id="option2" value="NORMAL">
 								接受轉乘
 							</label>
 							<label for="option3" class="btn btn-lg btn-linear">
 								<input type="radio" name="transfer" id="option3" value="MORE_THAN_ONE">
 								指定轉乘
-							</label>
+							</label> -->
 						</div>
 					</div>
 				</div>
@@ -3741,7 +3773,7 @@
 						<div class="form_title">
 							<label for="FromTimeSelect">時段</label><label for="startTime" title="起">起</label><label for="endTime" title="迄">迄</label>
 						</div>
-						<div class="switch-radio switch-time">
+						<!-- <div class="switch-radio switch-time">
 							<div class="radio">
 								<input class="radio-basic" type="radio" value="true" id="startOrEndTime1" name="startOrEndTime" checked="checked">
 								<label for="startOrEndTime1">查詢出發時間</label>
@@ -3750,7 +3782,7 @@
 								<input class="radio-basic" type="radio" value="false" id="startOrEndTime2" name="startOrEndTime">
 								<label for="startOrEndTime2">查詢抵達時間</label>
 							</div>
-						</div>
+						</div> -->
 						<!-- 時段開始 -->
 						<div class="zone">
 							<select id="startTime" class="form-control" name="startTime">
@@ -3909,7 +3941,7 @@
 					</div>
 					<!--是否僅查詢早享車次按鈕-->
 					
-						<div class="zone">
+						<!-- <div class="zone">
 							<div class="form_title">
 								<label>優惠</label>
 							</div>
@@ -3919,7 +3951,7 @@
 									<span>限定早享車次</span>
 								</label>
 							</div>
-						</div>
+						</div> -->
 					
 					<!--確認按鈕-->
 					<div class="btn-sentgroup">
